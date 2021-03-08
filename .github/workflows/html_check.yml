@@ -12,4 +12,4 @@ jobs:
       - name: Checks HTML5
         uses: Cyb3r-Jak3/html5validator-action-experimental@v1
         with:
-          root: ./src/
+          root: ./pages
