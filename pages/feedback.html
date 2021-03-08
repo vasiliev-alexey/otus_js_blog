@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Обратная связь</title>
+  </head>
+  <body>
+    <div class="page">
+      <%= require('html-loader?{"attributes": false}!./parts/head.html') %> <%=
+      require('html-loader?{"attributes": false}!./parts/sidebar.html') %> <%=
+      require('html-loader?{"attributes": false}!./parts/feedback_form.html') %>
+      <%= require('html-loader?{"attributes": false}!./parts/footer.html') %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blog</title>
+  </head>
+  <body>
+    <div class="page">
+      <%= require('html-loader?{"attributes": false}!./parts/head.html') %>
+
+      <div>
+        <article>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac
+          tellus lacinia, aliquam sapien ac, venenatis tellus. Aliquam fermentum
+          ipsum dolor, in condimentum lacus rhoncus ut. Quisque elementum vitae
+          enim sed vulputate. Nullam luctus, quam et placerat aliquet, est ex
+          aliquam turpis, vel semper urna nulla quis sapien. Pellentesque
+          habitant morbi tristique senectus et netus et malesuada fames ac
+          turpis egestas. Interdum et malesuada fames ac ante ipsum primis in
+          faucibus. Donec tempus metus nisl, pulvinar consequat ipsum varius
+          sed. Cras bibendum lacus et risus suscipit facilisis. In elementum
+          urna tellus, vel fermentum lacus accumsan tincidunt. Nam nec tellus id
+          augue auctor dapibus. Mauris ornare orci purus, at congue tellus
+          venenatis eget. Nulla ut vulputate est. Mauris cursus magna ac velit
+          tincidunt, a dapibus elit efficitur. In hac habitasse platea dictumst.
+          Morbi laoreet, sem quis tristique porta, eros velit pretium velit,
+          vitae luctus dolor metus non tellus.
+        </article>
+      </div>
+
+      <%= require('html-loader?{"attributes": false}!./parts/sidebar.html') %>
+      <%= require('html-loader?{"attributes": false}!./parts/footer.html') %>
+    </div>
+  </body>
+</html>
