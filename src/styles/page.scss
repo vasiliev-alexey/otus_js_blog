@@ -1,3 +1,12 @@
-body {
-  background: aqua;
+.page {
+  background-color: darkolivegreen;
+
+  //background: #54b948;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  padding: 10px;
+  //float: bottom;
+  display: block;
+
 }

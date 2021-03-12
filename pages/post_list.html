@@ -5,11 +5,20 @@
     <title>список</title>
   </head>
   <body>
-    <div class="page">
-      <%= require('html-loader?{"attributes": false}!./parts/head.html') %> <%=
-      require('html-loader?{"attributes": false}!./parts/sidebar.html') %> <%=
-      require('html-loader?{"attributes": false}!./parts/posts.html') %> <%=
-      require('html-loader?{"attributes": false}!./parts/footer.html') %>
+  <%= require('html-loader?{"attributes": false}!./parts/head.html') %>
+ <div class='container'>
+   <%= require('html-loader?{"attributes": false}!./parts/sidebar.html') %>
+  <div class="page">
+
+
+    <main class='main'>
+    <%=
+      require('html-loader?{"attributes": false}!./parts/posts.html') %>
+      </main>
     </div>
+
+  </div>
+  <%=
+  require('html-loader?{"attributes": false}!./parts/footer.html') %>
   </body>
 </html>

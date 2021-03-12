@@ -5,10 +5,12 @@
     <title>Blog</title>
   </head>
   <body>
+  <%= require('html-loader?{"attributes": false}!./parts/head.html') %>
+  <div class='container'>
+    <%= require('html-loader?{"attributes": false}!./parts/sidebar.html') %>
     <div class="page">
-      <%= require('html-loader?{"attributes": false}!./parts/head.html') %>
 
-      <div>
+      <main class='main'>
         <article>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac
           tellus lacinia, aliquam sapien ac, venenatis tellus. Aliquam fermentum
@@ -26,10 +28,13 @@
           Morbi laoreet, sem quis tristique porta, eros velit pretium velit,
           vitae luctus dolor metus non tellus.
         </article>
-      </div>
+      </main>
 
-      <%= require('html-loader?{"attributes": false}!./parts/sidebar.html') %>
-      <%= require('html-loader?{"attributes": false}!./parts/footer.html') %>
     </div>
+
+
+
+  </div>
+  <%= require('html-loader?{"attributes": false}!./parts/footer.html') %>
   </body>
 </html>
