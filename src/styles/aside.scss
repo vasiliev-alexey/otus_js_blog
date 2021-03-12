@@ -1,0 +1,19 @@
+.aside_main {
+  //display: inline-block;
+  //border: black 1px solid;
+padding: 10px;
+  a {
+    display: block;
+  }
+
+ textarea {
+   height: 25px;
+   background-color: lightgray;
+   color: white;
+   resize: none;
+   //padding-bottom: 20px;
+   color: black;
+   aria-label: "Search"
+ }
+
+}

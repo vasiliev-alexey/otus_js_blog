@@ -5,11 +5,14 @@
     <title>Обратная связь</title>
   </head>
   <body>
+  <%= require('html-loader?{"attributes": false}!./parts/head.html') %>
     <div class="page">
-      <%= require('html-loader?{"attributes": false}!./parts/head.html') %> <%=
-      require('html-loader?{"attributes": false}!./parts/sidebar.html') %> <%=
-      require('html-loader?{"attributes": false}!./parts/feedback_form.html') %>
-      <%= require('html-loader?{"attributes": false}!./parts/footer.html') %>
+
+<!--      <%=   require('html-loader?{"attributes": false}!./parts/sidebar.html') %>-->
+     <div class="main">
+      <%=  require('html-loader?{"attributes": false}!./parts/feedback_form.html') %>
+     </div>
     </div>
+  <%= require('html-loader?{"attributes": false}!./parts/footer.html') %>
   </body>
 </html>

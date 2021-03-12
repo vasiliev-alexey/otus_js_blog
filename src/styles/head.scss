@@ -1,30 +1,66 @@
 .head {
   text-align: center;
-  padding: 5px;
-  background: #d71920;
-  height: 10%;
-  display: block;
-
+  //padding: 0x;
+  background: rgba(0, 0, 0, 0.8);
+  min-height: 20px;
+  width: 100%;
+  display: flex;
+  padding: 15px;
+  align-items: center;
 }
 
+
+.head__search__label {
+  visibility: hidden;
+}
 .head__nav {
-    display: flex;
-    // background-color: red;
-    flex-direction: row;
-    justify-content: flex-start;
-  width: 50%;
+ // display: flex;
+  //flex-direction: row;
+ // justify-content: flex-start;
+  width: 70%;
+  //position: center;
+  display: flex;
+  justify-content: center;
+
+
   a {
     flex-grow: 1;
-}
+    color: white;
+    text-decoration: none;
+   }
 
 }
 
 .head__auth {
-    justify-content: center;
-    // flex-direction:column ;
-    width: 50%;
-    float: right;
-    border: 1px double black; /* Параметры границы */
-align-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  width: 30%;
+  //border: 1px double black; /* Параметры границы */
+  align-content: flex-start;
+
+  a {
+    flex-grow: 1;
+    color: white;
+    text-decoration: none;
+  }
+
 }
 
+.head__logo {
+  background-image: url('../img/web-browser.png');
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: center;
+
+  // flex-direction: row;
+ // align-items: center;
+}
+
+
+.head__search {
+  height: 25px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}

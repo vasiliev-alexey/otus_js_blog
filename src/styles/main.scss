@@ -2,6 +2,13 @@
   //background: green;
   width: 100%;
   overflow: auto;
-  padding: 10px;
+  margin: 20px;
 
+
+}
+
+
+.main__posts {
+  display: flex;
+  flex-flow: row wrap;
 }
