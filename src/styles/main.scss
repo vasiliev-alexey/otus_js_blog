@@ -1,9 +1,6 @@
 .main {
-  //background: green;
   width: 100%;
   overflow: auto;
-  margin: 20px;
-
 
 }
 
@@ -11,4 +8,5 @@
 .main__posts {
   display: flex;
   flex-flow: row wrap;
+  margin: 10px;
 }

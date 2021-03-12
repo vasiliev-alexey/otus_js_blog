@@ -1,47 +1,50 @@
 .head {
   text-align: center;
-  //padding: 0x;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgb(36, 41, 46);
   min-height: 20px;
   width: 100%;
   display: flex;
   padding: 15px;
   align-items: center;
+
 }
 
 
 .head__search__label {
   visibility: hidden;
 }
+
 .head__nav {
- // display: flex;
-  //flex-direction: row;
- // justify-content: flex-start;
+
+
   width: 70%;
-  //position: center;
   display: flex;
   justify-content: center;
+  flex-grow: 4;
+  flex-shrink: 1;
 
+  display: flex;
 
   a {
     flex-grow: 1;
     color: white;
     text-decoration: none;
-   }
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
 
 }
 
 .head__auth {
   align-items: center;
-  display: flex;
   flex-direction: row;
   justify-content: right;
   width: 30%;
-  //border: 1px double black; /* Параметры границы */
-  align-content: flex-start;
+  display: flex;
+  align-content: space-around;
 
   a {
-    flex-grow: 1;
     color: white;
     text-decoration: none;
   }
@@ -49,13 +52,10 @@
 }
 
 .head__logo {
-  background-image: url('../img/web-browser.png');
+  background-image: url('../img/post-it.png');
   background-repeat: no-repeat;
-  background-size: 16px;
+  background-size: 20px;
   background-position: center;
-
-  // flex-direction: row;
- // align-items: center;
 }
 
 
@@ -63,4 +63,5 @@
   height: 25px;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
+  margin-left: 30px;
 }
