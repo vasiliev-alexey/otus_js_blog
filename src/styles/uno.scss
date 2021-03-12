@@ -1,0 +1,18 @@
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font: 1em 'Roboto Light', Helvetica, sans-serif;
+  //background: #d7e1f5;
+  color: #ffe;
+  height: 100%;
+}

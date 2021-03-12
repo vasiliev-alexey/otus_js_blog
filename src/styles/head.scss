@@ -1,0 +1,30 @@
+.head {
+  text-align: center;
+  padding: 5px;
+  background: #d71920;
+  height: 10%;
+  display: block;
+
+}
+
+.head__nav {
+    display: flex;
+    // background-color: red;
+    flex-direction: row;
+    justify-content: flex-start;
+  width: 50%;
+  a {
+    flex-grow: 1;
+}
+
+}
+
+.head__auth {
+    justify-content: center;
+    // flex-direction:column ;
+    width: 50%;
+    float: right;
+    border: 1px double black; /* Параметры границы */
+align-content: flex-start;
+}
+
