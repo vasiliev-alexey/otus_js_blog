@@ -10,3 +10,18 @@
   flex-flow: row wrap;
   margin: 10px;
 }
+
+.main__footer {
+  display: flex;
+  flex-flow: row;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__footer  a {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 30px;
+  text-decoration: none;
+}
