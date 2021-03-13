@@ -1,6 +1,6 @@
 node_modules/
 dist/
-doc/notes.md
+# doc/notes.md
 .idea
 
 /tmp
