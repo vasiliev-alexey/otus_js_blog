@@ -1,5 +1,23 @@
-<form>
-  <label for="inp1">Что-то тут надо ввести</label>
-  <input id="inp1" type="text" />
-  <input type="button" value="вву" />
+<form class="post__form" action="№">
+  <h2>Свяжитесь с нами</h2>
+  <header>
+    <label for="post_title">Представьтесь пожалуйста</label>
+    <input
+      id="post_title"
+      class="post__form__header"
+      type="text"
+      placeholder="Фамилия Имя"
+    />
+  </header>
+  <article>
+    <textarea
+      class="post__form__textarea"
+      name="post-text"
+      placeholder="О чем бы вы хотели нам сообщить"
+    ></textarea>
+  </article>
+
+  <div>
+    <input type="button" value="Написать нам" />
+  </div>
 </form>

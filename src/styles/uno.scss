@@ -5,15 +5,13 @@ html {
   box-sizing: border-box;
 }
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 body {
   font: 1em 'JetBrains Mono', Helvetica, sans-serif;
-  //background: #d7e1f5;
   background-color: rgb(36, 41, 46);
   height: 100%;
-
 }

@@ -1,7 +1,33 @@
+<form class="post__form" action="№">
+  <h2>Новый пост</h2>
+  <header>
+    <label for="post_title">Введите заголовок</label>
+    <input
+      id="post_title"
+      class="post__form__header"
+      type="text"
+      placeholder="Что-то очень интересное"
+    />
+  </header>
+  <article>
+    <textarea
+      class="post__form__textarea"
+      name="post-text"
+      placeholder="Напишите что-нибудь"
+    ></textarea>
+  </article>
 
-<form>
-  <input type='text'>
-  <input type='text'>
-  <input type='text'>
+  <footer class="post__form__footer">
+    <label for="post_tags">Введите Теги</label>
+    <input
+      id="post_tags"
+      class="post__form__header"
+      type="text"
+      placeholder="html css"
+    />
+  </footer>
 
+  <div>
+    <input type="button" value="Опубликовать" />
+  </div>
 </form>

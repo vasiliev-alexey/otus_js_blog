@@ -1,9 +1,7 @@
 .main {
   width: 100%;
   overflow: auto;
-
 }
-
 
 .main__posts {
   display: flex;
@@ -19,7 +17,7 @@
   justify-content: center;
 }
 
-.main__footer  a {
+.main__footer a {
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 30px;

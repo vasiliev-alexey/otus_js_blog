@@ -132,6 +132,7 @@ npm install --save-dev url-loader
       }
 
 ```
+
 12. Ставим stylelint
 
 ```sh

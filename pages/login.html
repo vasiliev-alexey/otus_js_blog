@@ -1,37 +1,37 @@
 <!DOCTYPE html>
-<html lang='en'>
-<head>
-  <meta charset='UTF-8' />
-  <title>Вход в систему</title>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Вход в систему</title>
+  </head>
+  <body>
+    <form name="loginForm" method="get" action="main.html" class="login__form">
+      <table class="login__form__table">
+        <tr>
+          <td colspan="2">
+            <div style="text-align: center">
+              <span style="font-size: medium"
+                ><b>Введите учетные данные</b></span
+              >
+            </div>
+          </td>
+        </tr>
 
-<form name='loginForm' method='get' action='main.html'  class='login__form'>
-  <table class='login__form__table'>
+        <tr>
+          <td>Пользователь:</td>
+          <td><input type="text" size="25" name="userid" /></td>
+        </tr>
 
-    <tr>
-      <td colspan='2'>
-        <div style='text-align: center;'><span style='font-size: medium; '><b>Введите учетные данные</b></span></div>
-      </td>
-    </tr>
+        <tr>
+          <td>Пароль:</td>
+          <td><input type="Password" size="25" name="pwd" /></td>
+        </tr>
 
-    <tr>
-      <td>Пользователь:</td>
-      <td><input type='text' size='25' name='userid'></td>
-    </tr>
-
-    <tr>
-      <td>Пароль:</td>
-      <td><input type='Password' size='25' name='pwd'></td>
-    </tr>
-
-    <tr>
-      <td><input type='Reset'  value='Отмена'></td>
-      <td><input type='submit' value='Вход'></td>
-    </tr>
-
-  </table>
-</form>
-
-</body>
+        <tr>
+          <td><input type="Reset" value="Отмена" /></td>
+          <td><input type="submit" value="Вход" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
 </html>

@@ -2,17 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Обратная связь</title>
+    <title>Новая статья</title>
   </head>
   <body>
-  <%= require('html-loader?{"attributes": false}!./parts/head.html') %>
-    <div class="page">
-
-<!--      <%=   require('html-loader?{"attributes": false}!./parts/sidebar.html') %>-->
-     <div class="main">
-      <%=  require('html-loader?{"attributes": false}!./parts/feedback_form.html') %>
-     </div>
+    <%= require('html-loader?{"attributes": false}!./parts/head.html') %>
+    <div class="container">
+      <!--   <%= require('html-loader?{"attributes": false}!./parts/sidebar.html') %>-->
+      <div class="page">
+        <main class="main">
+          <%=
+          require('html-loader?{"attributes":false}!./parts/feedback_form.html')
+          %>
+        </main>
+      </div>
     </div>
-  <%= require('html-loader?{"attributes": false}!./parts/footer.html') %>
+    <%= require('html-loader?{"attributes": false}!./parts/footer.html') %>
   </body>
 </html>
