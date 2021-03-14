@@ -24,14 +24,11 @@ module.exports = {
       filename: 'style.css',
     }),
     new webpack.ProgressPlugin(),
-    ...pages.map((el) => {
-      console.log('00000000000000000000000000000=', el);
-      return new HtmlWebpackPlugin({
+    ...pages.map((el) => new HtmlWebpackPlugin({
         filename: el.replace(/^pages\//, ''),
         template: el,
         minify: false,
-      });
-    }),
+      })),
   ],
 
   module: {
