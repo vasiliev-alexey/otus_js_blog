@@ -1,13 +1,22 @@
-.aside__main {
-  padding: 10px;
-  a {
-    display: block;
-  }
+.aside {
+  margin: 5px;
 }
 
-.aside__main__label {
+.aside__main {
+  padding: 10px;
+}
+
+.aside_link {
+  display: block;
+}
+
+.aside__label {
   height: 25px;
   background-color: lightgray;
   resize: none;
   color: black;
+}
+
+.aside__header {
+  padding: 10px;
 }

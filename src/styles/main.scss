@@ -1,12 +1,16 @@
 .main {
   width: 100%;
   overflow: auto;
+  flex-direction: column;
+  height: 100%;
+  display: flex;
 }
 
 .main__posts {
   display: flex;
   flex-flow: row wrap;
-  margin: 10px;
+  flex: 1 1 10px;
+  justify-content: end;
 }
 
 .main__footer {
@@ -15,6 +19,10 @@
   margin: 10px;
   align-items: center;
   justify-content: center;
+  flex: 0 0 auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
 }
 
 .main__footer a {

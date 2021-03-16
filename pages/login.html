@@ -1,37 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <title>Вход в систему</title>
   </head>
   <body>
-    <form name="loginForm" method="get" action="main.html" class="login__form">
-      <table class="login__form__table">
-        <tr>
-          <td colspan="2">
-            <div style="text-align: center">
-              <span style="font-size: medium"
-                ><b>Введите учетные данные</b></span
-              >
-            </div>
-          </td>
-        </tr>
+    <form class="loginForm" method="get" action="main.html">
+      <div class="loginForm__box">
+        <h1 class="loginForm__title">Вход</h1>
 
-        <tr>
-          <td>Пользователь:</td>
-          <td><input type="text" size="25" name="userid" /></td>
-        </tr>
+        <input
+          type="email"
+          name="email"
+          value="email"
+          class="loginForm__username"
+        />
+        <input type="password" name="pass" class="loginForm__username" />
 
-        <tr>
-          <td>Пароль:</td>
-          <td><input type="Password" size="25" name="pwd" /></td>
-        </tr>
-
-        <tr>
-          <td><input type="Reset" value="Отмена" /></td>
-          <td><input type="submit" value="Вход" /></td>
-        </tr>
-      </table>
+        <div class="loginForm__action">
+          <input type="Reset" class="loginForm__btn" value="Отмена" />
+          <input class="loginForm__btn" type="submit" value="Вход" />
+        </div>
+      </div>
     </form>
   </body>
 </html>

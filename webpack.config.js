@@ -46,6 +46,7 @@ module.exports = {
         use: {
           loader: 'url-loader',
         },
+        include: [path.resolve(__dirname, 'src/img')],
       },
 
       {
@@ -56,6 +57,19 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
+      },
+
+      {
+        test: /\.(png|jpe?g|gif|svg|jpg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images',
+            },
+          },
+        ],
       },
     ],
   },
