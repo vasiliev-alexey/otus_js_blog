@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="Description" content="Personal blog" />
+  </head>
+  <body>
+    <%= require('html-loader?{"attributes": false}!./parts/head.html') %>
+    <div class="container">
+      <%= require('html-loader?{"attributes": false}!./parts/sidebar.html') %>
+      <div class="page">
+        <main class="main">
+          <details>
+            <summary>Основные подходы к позиционированию элементов</summary>
+            <article>
+              <h2>
+                Использовать препроцессор для создания страниц приложения "блог"
+                - сверстанные страницы должны быть доступны на githubpages
+              </h2>
+              <h3>
+                Цель: В результате выполнения ДЗ вы создадите верстку для вашего
+                личного блога с использование препроцессора SASS(/LESS)
+              </h3>
+
+              <p>В данном задании тренируются навыки:</p>
+              <ul>
+                <li>верстки страниц</li>
+                <li>использование принципов DRY при верстке</li>
+                <li>использование препроцессоров</li>
+                <li>деплой страниц на сервис github pages</li>
+              </ul>
+              <p>Необходимо:</p>
+              <ul>
+                <li>создать новый репозиторий</li>
+                <li>настроить в нем линтеры, github actions</li>
+                <li>включить проверку линтером при PR</li>
+                <li>включить деплой приложения при PR</li>
+                <li>
+                  создать сайт-блог с минимум 4мя страницами (главная, обратная
+                  связь, список записей, страница записи)
+                </li>
+                <li>создать пуллреквест с изменениями и</li>
+                <li>
+                  сбросить ссылку на PR и ссылку на задеплоенные страницы в част
+                  с преподавателем
+                </li>
+              </ul>
+              Критерии оценки: Критерии оценки:
+              <ul>
+                <li>создан репозиторий, настроены линтеры - 1 балл</li>
+                <li>
+                  настроены actions, проверка линтерами и автодеплой - 1 балл
+                </li>
+                <li>
+                  сверстаны 4 страницы с использованием препроцессора - 2 балла
+                </li>
+                <li>есть дополнительные страницы - 1 балл</li>
+                <li>использована методология BEM - 2 балла</li>
+              </ul>
+            </article>
+          </details>
+        </main>
+      </div>
+    </div>
+    <%= require('html-loader?{"attributes": false}!./parts/footer.html') %>
+  </body>
+</html>

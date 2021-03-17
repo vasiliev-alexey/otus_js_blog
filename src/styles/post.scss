@@ -1,0 +1,23 @@
+.postForm {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  width: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.postForm__textarea {
+  margin: 7px 0;
+  width: 100%;
+  height: 300px;
+}
+
+.postForm__header {
+  width: 100%;
+}
+
+.postForm__footer {
+  margin: 7px 0;
+  width: 100%;
+  flex: content-box;
+}
