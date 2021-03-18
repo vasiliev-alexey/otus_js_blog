@@ -92,6 +92,10 @@
 }
 
 .head_burger:checked {
+  & ~ .headInfo {
+    display: none;
+  }
+
   & ~ .head__nav,
   ~ .head__auth {
     flex-direction: column;
