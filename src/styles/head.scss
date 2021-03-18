@@ -5,10 +5,15 @@
   width: 100%;
   display: flex;
   padding: 15px;
-  align-items: baseline;
+  align-items: flex-start;
 
   @include phones {
     flex-direction: column;
+  }
+  @include pads {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
   }
 }
 
@@ -28,7 +33,7 @@
   max-width: 900px;
   flex-direction: row;
 
-  @include phones {
+  @include pads {
     flex-direction: column;
     display: none;
   }
@@ -36,7 +41,7 @@
 
 .head_burger {
   background-color: #2cc06b;
-  display: none;
+  //display: none;
   display: block;
   width: 40px;
   height: 32px;
@@ -47,7 +52,7 @@
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
 
-  @include phones {
+  @include pads {
     display: block;
   }
 }
@@ -60,7 +65,7 @@
   align-content: space-around;
   float: right;
 
-  @include phones {
+  @include pads {
     justify-content: left;
     display: none;
   }
@@ -69,13 +74,13 @@
     color: white;
     text-decoration: none;
 
-    @include phones {
+    @include pads {
       margin-left: 10px;
     }
   }
 }
 
-@include phones {
+@include pads {
   .head span {
     display: block;
     width: 33px;
@@ -134,7 +139,7 @@
   margin-right: 10px;
   position: relative;
 
-  @include phones {
+  @include pads {
     display: none;
   }
 }
@@ -145,9 +150,14 @@
   color: white;
   margin-left: 30px;
 
-  @include phones {
+  @include pads {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  @include phones {
+    margin-left: auto;
+    width: 100%;
   }
 }
