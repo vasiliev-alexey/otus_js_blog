@@ -8,7 +8,7 @@
     "lint": "prettier --check . && eslint . && stylelint \"**/*.scss\"",
     "lint:fix": "prettier --write . && eslint . --fix && stylelint \"**/*.scss\" --fix",
     "build": "webpack",
-    "dev": "webpack serve --host 0.0.0.0 --port 5000"
+    "dev": "webpack serve  --port 5000"
   },
   "keywords": [],
   "author": "vasiliev-alexey",

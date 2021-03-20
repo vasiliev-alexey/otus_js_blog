@@ -1,5 +1,9 @@
 .aside {
   margin: 5px;
+
+  @include reader {
+    display: none;
+  }
 }
 
 .aside-main {
