@@ -4,6 +4,10 @@
   flex-direction: column;
   height: 100%;
   display: flex;
+
+  @include pads {
+    overflow-x: hidden;
+  }
 }
 
 .mainPosts {

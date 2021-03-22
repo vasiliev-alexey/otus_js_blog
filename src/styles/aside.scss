@@ -1,7 +1,7 @@
 .aside {
   margin: 5px;
 
-  @include phones {
+  @include reader {
     display: none;
   }
 }
