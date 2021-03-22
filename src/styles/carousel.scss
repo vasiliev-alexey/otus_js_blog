@@ -1,92 +1,79 @@
 .carousel__sliderImg {
-  width: 100%;
-  height: 100%;
-  border: black 1px solid;
+  //width: 100%;
+  //height: 100%;
+  //max-width: 100%;
+  //max-height: 100%;
+  //min-width:100%;
+  // width: 100%;
+  // border: black 1px solid;
   position: relative;
   z-index: 0;
+  //  display: block;
+  //margin-top: auto;
+  //object-fit: contain;
+  //object-fit: contain;
+  //  display: inline;
+
+  width: 100%; /* or any custom size */
+  height: 100%;
+  object-fit: contain;
 }
+
+.aspect-ratio-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex-grow: 2;
+  // max-width: none;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+/* Create a pseudo element that uses padding-bottom to take up space */
+//.aspect-ratio-box::after {
+//  display: block;
+//  content: '';
+//  //padding-bottom: 56.25%;
+//}
 
 .carousel__list {
   list-style-type: none;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  //flex-direction: row;
+  justify-content: space-between;
+  flex-direction: row;
   height: 100%;
   border: black 1px solid;
-}
-
-/* Next & previous buttons */
-.previous,
-.next {
-  cursor: pointer;
-  top: 85%;
-  //width: 20%;
- // padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 25px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  background-color: #2cc06b;
-  z-index: 99;
-  color: black;
-
-  border: black 1px solid;
-  bottom: 0px;
-  top: 0px;
-
- // position:relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-}
-
-
-.next {
-  left: 3%;
-  //bottom: -50%;
-  border-radius: 3px 0 0 3px;
-  //margin-right: auto;
- // margin-right: 100px;
-  //position: relative;
-  //padding-left: 20px;
-  z-index: 99;
-  width: 10%;
-  //padding-left: 10px;
-  z-index: 99;
-  position: relative;
-  display: block;
-
-
-}
-
-.previous{
-  right: 92%;
-  border-radius: 3px 0 0 3px;
-  margin-left: auto;
-}
-
-.previous:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
 }
 
 .btn {
   position: relative;
   top: 0%;
-  left: 10%;
-  //transform: translate(-50%, -50%);
- // -ms-transform: translate(-50%, -50%);
-  background-color: #aaaaaa;
-
+  width: auto;
+  background-color: #aaa;
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
-  z-index: 9;
+  border-radius: 3px 0 0 3px;
+  z-index: 99;
+  //  flex-shrink: 1
+}
+
+.btn-left {
+  left: 5%;
+  margin-left: auto;
+}
+.btn-right {
+  right: 5%;
+  margin-right: auto;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }

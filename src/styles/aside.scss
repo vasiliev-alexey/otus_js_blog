@@ -1,8 +1,7 @@
 .aside {
   margin: 5px;
 
-
-@include reader {
+  @include reader {
     display: none;
   }
 }
