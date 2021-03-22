@@ -1,11 +1,8 @@
 .aside {
   margin: 5px;
 
-<<<<<<< HEAD
-  @include phones {
-=======
-  @include reader {
->>>>>>> master
+
+@include reader {
     display: none;
   }
 }
