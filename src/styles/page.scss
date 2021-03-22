@@ -4,4 +4,8 @@
   overflow: auto;
   padding: 10px;
   display: block;
+
+  @include pads {
+    overflow-x: hidden;
+  }
 }
