@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>список</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="Description" content="Personal blog" />
+  <link href="style.css" rel="stylesheet"></head>
+  <body>
+    <div class="head">
+  <label class="head_burgerLabel">Персоональный блог</label>
+  <input type="checkbox" class="head_burger" id="burger-check" />
+
+  <div class="head__burger">
+    <span class="head__firstSpan"></span>
+    <span class="head__mediumSpan"></span>
+    <span class="head__lastSpan"></span>
+  </div>
+  <div class="headInfo">
+    <a class="head__logo" href="main.html">
+      <img
+        src="./images/post-it.svg"
+        alt="blog post logo"
+        width="48"
+        height="48"
+      />
+    </a>
+    <input class="head__search" type="text" placeholder="Поиск" />
+  </div>
+
+  <div class="head__nav">
+    <a class="head__link" href="./main.html">Главная</a>
+    <a class="head__link" href="./post_list.html">Список записей</a>
+    <a class="head__link" href="./feedback.html">Обратная связь</a>
+    <a class="head__link" href="./new_post.html">Новая статья</a>
+    <!--    <a class="head__link" href="./login.html">Войти</a>-->
+  </div>
+
+  <div class="head__auth">
+    <a href="./login.html">Войти</a>
+  </div>
+</div>
+
+    <div class="container">
+      <!--   <aside class="aside">
+  <header class="aside__header">Репозиотории</header>
+  <article class="aside-main">
+    <h4>Контент</h4>
+    <textarea class="aside-main__label" placeholder="Поиск"></textarea>
+
+    <a class="aside-main_link" href="#">Репо1</a>
+    <a class="aside-main_link" href="#">Репо1</a>
+    <a class="aside-main_link" href="#">Репо1</a>
+    <a class="aside-main_link" href="#">Репо1</a>
+    <a class="aside-main_link" href="#">Репо1</a>
+    <a class="aside-main_link" href="#">Репо1</a>
+  </article>
+  <article class="aside-main">
+    <h4>Ваши команды</h4>
+    <textarea class="aside-main__label" placeholder="Поиск"></textarea>
+    <a class="aside-main_link" href="#">Репо1</a>
+    <a class="aside-main_link" href="#">Репо1</a>
+    <a class="aside-main_link" href="#">Репо1</a>
+    <a class="aside-main_link" href="#">Репо1</a>
+    <a class="aside-main_link" href="#">Репо1</a>
+    <a class="aside-main_link" href="#">Репо1</a>
+  </article>
+</aside>
+-->
+      <div class="page">
+        <div class="main">
+          <h3>Тут список наших чудесных постов</h3>
+
+<main class="mainPosts">
+  <article class="card">
+    <div class="card__header">
+      <img src="./images/post-it.svg" alt="card logo" class="card__logo" />
+      <h4><b>Основные подходы к позиционированию элементов</b></h4>
+    </div>
+
+    <div class="card__container">
+      <h4>
+        <b
+          >Использовать препроцессор для создания страниц приложения "блог" -
+          сверстанные страницы должны быть доступны на githubpages</b
+        >
+      </h4>
+      <a href="#">Читать далее...</a>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card__header">
+      <img src="./images/post-it.svg" alt="card logo" class="card__logo" />
+      <h4>
+        <b>Использование CSS-фреймворков - нужно ли браться за Бутстарп?</b>
+      </h4>
+    </div>
+
+    <div class="card__container">
+      <h4>
+        <b
+          >Какие вопросы решают CSS-фреймворки, в чем их достоинства и
+          недостатки; поработать с Bootstrap</b
+        >
+      </h4>
+      <a href="#">Читать далее...</a>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card__header">
+      <img src="./images/post-it.svg" alt="card logo" class="card__logo" />
+      <h4><b>Оптимизация и деплой страниц, метрики для анализа качества</b></h4>
+    </div>
+
+    <div class="card__container">
+      <h4>
+        <b
+          >Оптимизировать сверстаные страницы по lighthouse и проверить на
+          a11y</b
+        >
+      </h4>
+      <a href="#">Читать далее...</a>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card__header">
+      <img src="./images/post-it.svg" alt="card logo" class="card__logo" />
+      <h4>
+        <b
+          >Инструменты разработки. Тестирование верстки, использование
+          медиазапросов</b
+        >
+      </h4>
+    </div>
+
+    <div class="card__container">
+      <h4><b>настроить локальный HTTP сервер, browsersync</b></h4>
+      <a href="#">Читать далее...</a>
+    </div>
+  </article>
+</main>
+
+<footer class="mainFooter">
+  <a href="#">&lt;</a>
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">&gt;</a>
+</footer>
+
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+  <img src="./images/VK.com-logo.svg" alt="VK logo" class="footer__img" />
+  <img
+    src="./images/Instagram-Logo.wine.svg"
+    alt="Instagram logo"
+    class="footer__img"
+  />
+  <img src="./images/twt.svg" alt="twt logo" class="footer__img" />
+</footer>
+
+  <script src="main.js"></script></body>
+</html>
