@@ -4,20 +4,18 @@ const images = [
   './images/sea.jpg',
 ];
 
-const upperBound = images.length;
-
-export  function StateSlider() {
+export function StateSlider(imageCount) {
   this.currentIndex = 0;
   this.rotator = null;
   this.nextImage = function nextImage() {
     this.currentIndex += 1;
-    if (this.currentIndex === upperBound) {
+    if (this.currentIndex === imageCount) {
       this.currentIndex = 0;
     }
   };
   this.prevImage = function prevImage() {
     if (this.currentIndex === 0) {
-      this.currentIndex = upperBound - 1;
+      this.currentIndex = imageCount - 1;
     } else {
       this.currentIndex -= 1;
     }
@@ -28,7 +26,7 @@ export  function StateSlider() {
   };
 }
 
-const state = new StateSlider();
+const state = new StateSlider(images.length);
 
 function rotate() {
   const curImg = document.querySelector('.carousel__sliderImg');
@@ -43,20 +41,22 @@ function rotate() {
 
   const prev = document.getElementById('prevBtn');
 
-  prev.addEventListener('click', (ev) => {
-    ev.stopPropagation();
-    state.disableRotation();
-    state.prevImage();
-    rotate();
-  });
+  if (prev !== null) {
+    prev.addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      state.disableRotation();
+      state.prevImage();
+      rotate();
+    });
+  }
 
   const nextBtn = document.getElementById('nextBtn');
-  nextBtn.addEventListener('click', (ev) => {
-    ev.stopPropagation();
-    state.disableRotation();
-    state.nextImage();
-    rotate();
-  });
+  if (nextBtn !== null) {
+    nextBtn.addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      state.disableRotation();
+      state.nextImage();
+      rotate();
+    });
+  }
 })();
-
-

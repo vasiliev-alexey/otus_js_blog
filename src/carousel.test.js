@@ -1,7 +1,69 @@
 // test place
-import { StateSlider} from './carousel';
+import * as data from './carousel';
 
-test('adds 1 + 2 to equal 3', () => {
-    StateSlider.nextImage();
-     expect(1).toBe(3);
+test('check initial state', () => {
+  const f = new data.StateSlider(1);
+  expect(f.currentIndex).toBe(0);
+});
+
+test('check next image state', () => {
+  const f = new data.StateSlider(3);
+
+  f.nextImage();
+  expect(f.currentIndex).toBe(1);
+
+  f.nextImage();
+  expect(f.currentIndex).toBe(2);
+});
+
+test('check next image over state', () => {
+  const f = new data.StateSlider(3);
+  f.nextImage();
+  f.nextImage();
+  f.nextImage();
+  f.nextImage();
+  f.nextImage();
+  expect(f.currentIndex).toBe(2);
+});
+
+test('check next image over state set zero with overflow', () => {
+  const f = new data.StateSlider(3);
+  f.nextImage();
+  f.nextImage();
+  f.nextImage();
+
+  expect(f.currentIndex).toBe(0);
+});
+
+test('check prev image over state', () => {
+  const f = new data.StateSlider(3);
+
+  f.prevImage();
+  expect(f.currentIndex).toBe(2);
+});
+
+test('check multi prev image over state', () => {
+  const f = new data.StateSlider(3);
+
+  f.prevImage();
+  f.prevImage();
+  f.prevImage();
+  f.prevImage();
+  expect(f.currentIndex).toBe(2);
+});
+
+test('check multi prev image over state', () => {
+  const f = new data.StateSlider(3);
+  f.currentIndex = 0;
+
+  f.prevImage();
+  expect(f.currentIndex).toBe(2);
+});
+
+test('stop rotate', () => {
+  jest.useFakeTimers();
+  const f = new data.StateSlider(3);
+  f.rotator = 0;
+  f.disableRotation();
+  expect(clearInterval).toHaveBeenCalledWith(expect.any(Number));
 });
