@@ -6,7 +6,7 @@ const images = [
 
 const upperBound = images.length;
 
-function State() {
+export  function StateSlider() {
   this.currentIndex = 0;
   this.rotator = null;
   this.nextImage = function nextImage() {
@@ -28,7 +28,7 @@ function State() {
   };
 }
 
-const state = new State();
+const state = new StateSlider();
 
 function rotate() {
   const curImg = document.querySelector('.carousel__sliderImg');
@@ -42,6 +42,7 @@ function rotate() {
   }, 5000);
 
   const prev = document.getElementById('prevBtn');
+
   prev.addEventListener('click', (ev) => {
     ev.stopPropagation();
     state.disableRotation();
@@ -57,3 +58,5 @@ function rotate() {
     rotate();
   });
 })();
+
+
