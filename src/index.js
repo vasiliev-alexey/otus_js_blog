@@ -6,5 +6,5 @@ import './img/post-it.png';
 import './img/post-it.svg';
 import './img/VK.com-logo.svg';
 import './img/Instagram-Logo.wine.svg';
-import './carusel';
+import './carousel';
 import './img/sea.jpg';
