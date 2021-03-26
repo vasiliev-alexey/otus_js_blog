@@ -4,21 +4,31 @@ const images = [
   './images/sea.jpg',
 ];
 
-export function StateSlider(imageCount) {
+export function StateSlider(imageCount, rotateFunc, options) {
   this.currentIndex = 0;
-  this.rotator = null;
+  if (options !== undefined && options.enableRotator) {
+    this.rotator = setInterval(() => {
+      this.nextImage();
+    }, 5000);
+  }
+
+  this.rotate = rotateFunc;
   this.nextImage = function nextImage() {
+    this.disableRotation();
     this.currentIndex += 1;
     if (this.currentIndex === imageCount) {
       this.currentIndex = 0;
     }
+    this.rotate();
   };
   this.prevImage = function prevImage() {
+    this.disableRotation();
     if (this.currentIndex === 0) {
       this.currentIndex = imageCount - 1;
     } else {
       this.currentIndex -= 1;
     }
+    this.rotate();
   };
 
   this.disableRotation = function disableRotation() {
@@ -26,27 +36,25 @@ export function StateSlider(imageCount) {
   };
 }
 
-const state = new StateSlider(images.length);
+/* eslint no-use-before-define: ["error", { "functions": false }] */
+const state = new StateSlider(images.length, rotate, {
+  enableRotator: true,
+});
 
 function rotate() {
   const curImg = document.querySelector('.carousel__sliderImg');
-  curImg.src = images[state.currentIndex];
+  if (curImg !== null) {
+    curImg.src = images[state.currentIndex];
+  }
 }
 
 (function init() {
-  state.rotator = setInterval(() => {
-    state.nextImage();
-    rotate();
-  }, 5000);
-
+  rotate();
   const prev = document.getElementById('prevBtn');
-
   if (prev !== null) {
     prev.addEventListener('click', (ev) => {
       ev.stopPropagation();
-      state.disableRotation();
       state.prevImage();
-      rotate();
     });
   }
 
@@ -54,9 +62,7 @@ function rotate() {
   if (nextBtn !== null) {
     nextBtn.addEventListener('click', (ev) => {
       ev.stopPropagation();
-      state.disableRotation();
       state.nextImage();
-      rotate();
     });
   }
 })();

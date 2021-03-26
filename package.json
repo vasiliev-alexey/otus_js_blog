@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "lint": "prettier --check . && eslint . && stylelint \"**/*.scss\"",
+    "test": "jest",
     "lint:fix": "prettier --write . && eslint . --fix && stylelint \"**/*.scss\" --fix",
     "build": "webpack",
     "dev": "webpack serve  --port 5000"
